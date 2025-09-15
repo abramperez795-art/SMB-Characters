@@ -62,7 +62,7 @@ catch (Exception ex)
     logger.Error(ex, "Error reading mario.csv");
 }
 
-  string? choice;
+string? choice;
 do
 {
     Console.WriteLine("1) Add Character");
@@ -70,3 +70,64 @@ do
     Console.WriteLine("Enter to quit");
     choice = Console.ReadLine();
     logger.Info("User choice: {Choice}", choice);
+    if (choice == "1")
+    {
+        Console.WriteLine("Enter new character name: ");
+        string? Name = Console.ReadLine();
+
+        if (!string.IsNullOrEmpty(Name))
+        {
+            var LowerCaseNames = Names.ConvertAll(n => n.ToLower());
+            if (LowerCaseNames.Contains(Name.ToLower()))
+            {
+                logger.Info("Duplicate name attempted: {Name}", Name);
+                Console.WriteLine("Name already exists.");
+            }
+            else
+            {
+                UInt64 Id = Ids.Count > 0 ? Ids.Max() + 1 : 1;
+                Console.WriteLine("Enter description:");
+                string? Description = Console.ReadLine();
+                Console.WriteLine("Enter species:");
+                string? SpeciesValue = Console.ReadLine();
+                Console.WriteLine("Enter first appearance:");
+                string? FirstAppearance = Console.ReadLine();
+                Console.WriteLine("Enter year created:");
+                bool validYear = int.TryParse(Console.ReadLine(), out int YearCreated);
+
+                if (!validYear)
+                {
+                    logger.Error("Invalid year entered");
+                    Console.WriteLine("Invalid year. Character not added.");
+                }
+                else
+                {
+                    try
+                    {
+                        using StreamWriter sw = new(file, true);
+                        sw.WriteLine($"{Id},{Name},{Description},{SpeciesValue},{FirstAppearance},{YearCreated}");
+
+                        // Add to memory
+                        Ids.Add(Id);
+                        Names.Add(Name);
+                        Descriptions.Add(Description ?? "");
+                        Species.Add(SpeciesValue ?? "");
+                        FirstAppearances.Add(FirstAppearance ?? "");
+                        YearsCreated.Add(YearCreated);
+
+                        logger.Info("Character added: {Id}, {Name}", Id, Name);
+                        Console.WriteLine("Character added!");
+                    }
+                    catch (Exception ex)
+                    {
+                        logger.Error(ex, "Failed to write new character to file");
+                    }
+                }
+            }
+        }
+        else
+        {
+            logger.Error("Empty name entered");
+            Console.WriteLine("You must enter a name.");
+        }
+    }
