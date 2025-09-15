@@ -145,3 +145,6 @@ else if (choice == "2")
     }
     logger.Info("Displayed all characters.");
 }
+} while (choice == "1" || choice == "2");
+
+logger.Info("Program ended");
