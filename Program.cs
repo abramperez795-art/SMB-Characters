@@ -21,5 +21,45 @@ else
     List<string> FirstAppearances = new();
     List<int> YearsCreated = new();
 }
+try
+{
+    using StreamReader sr = new(file);
+    sr.ReadLine(); // Skip header
+
+    string? line;
+    while ((line = sr.ReadLine()) != null)
+    {
+        if (!string.IsNullOrEmpty(line))
+        {
+            string[] details = line.Split(',').Select(d => d.Trim()).ToArray();
+
+            if (details.Length == 6)
+            {
+                if (UInt64.TryParse(details[0], out var id) && int.TryParse(details[5], out var year))
+                {
+                    // Add values to each list
+                    Ids.Add(id);
+                    Names.Add(details[1]);
+                    Descriptions.Add(details[2]);
+                    Species.Add(details[3]);
+                    FirstAppearances.Add(details[4]);
+                    YearsCreated.Add(year);
+                }
+                else
+                {
+                    logger.Error("Could not parse Id or Year: {line}", line);
+                }
+            }
+            else
+            {
+                logger.Error("Malformed line: {line}", line);
+            }
+        }
+    }
+}
+catch (Exception ex)
+{
+    logger.Error(ex, "Error reading mario.csv");
+}
 
   
