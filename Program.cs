@@ -1,4 +1,6 @@
-﻿string path = Path.Combine(Directory.GetCurrentDirectory(), "nlog.config");
+﻿using nLog;
+
+string path = Path.Combine(Directory.GetCurrentDirectory(), "nlog.config");
 
 var logger = LogManager.Setup().LoadConfigurationFromFile(path).GetCurrentClassLogger();
 logger.Info("Program started");
