@@ -62,4 +62,11 @@ catch (Exception ex)
     logger.Error(ex, "Error reading mario.csv");
 }
 
-  
+  string? choice;
+do
+{
+    Console.WriteLine("1) Add Character");
+    Console.WriteLine("2) Display All Characters");
+    Console.WriteLine("Enter to quit");
+    choice = Console.ReadLine();
+    logger.Info("User choice: {Choice}", choice);
