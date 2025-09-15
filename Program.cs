@@ -131,3 +131,17 @@ do
             Console.WriteLine("You must enter a name.");
         }
     }
+else if (choice == "2")
+{
+    for (int i = 0; i < Ids.Count; i++)
+    {
+        Console.WriteLine($"Id: {Ids[i]}");
+        Console.WriteLine($"Name: {Names[i]}");
+        Console.WriteLine($"Description: {Descriptions[i]}");
+        Console.WriteLine($"Species: {Species[i]}");
+        Console.WriteLine($"First Appearance: {FirstAppearances[i]}");
+        Console.WriteLine($"Year Created: {YearsCreated[i]}");
+        Console.WriteLine();
+    }
+    logger.Info("Displayed all characters.");
+}
