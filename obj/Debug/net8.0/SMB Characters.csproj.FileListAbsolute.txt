@@ -1,0 +1,4 @@
+C:\Users\Owner\Documents\.Net Database Programming\SMB Characters\obj\Debug\net8.0\SMB Characters.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Owner\Documents\.Net Database Programming\SMB Characters\obj\Debug\net8.0\SMB Characters.AssemblyInfoInputs.cache
+C:\Users\Owner\Documents\.Net Database Programming\SMB Characters\obj\Debug\net8.0\SMB Characters.AssemblyInfo.cs
+C:\Users\Owner\Documents\.Net Database Programming\SMB Characters\obj\Debug\net8.0\SMB Characters.csproj.CoreCompileInputs.cache
