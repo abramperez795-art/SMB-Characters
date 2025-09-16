@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "R0ihxQfIcbM=",
+  "dgSpecHash": "58xbHr8fj3c=",
   "success": true,
   "projectFilePath": "C:\\Users\\Owner\\Documents\\.Net Database Programming\\SMB Characters\\SMB Characters.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Owner\\.nuget\\packages\\nlog\\6.0.3\\nlog.6.0.3.nupkg.sha512"
+    "C:\\Users\\Owner\\.nuget\\packages\\nlog\\6.0.3\\nlog.6.0.3.nupkg.sha512",
+    "C:\\Users\\Owner\\.nuget\\packages\\nlog.config\\4.7.15\\nlog.config.4.7.15.nupkg.sha512",
+    "C:\\Users\\Owner\\.nuget\\packages\\nlog.schema\\4.7.15\\nlog.schema.4.7.15.nupkg.sha512"
   ],
   "logs": []
 }

@@ -4,3 +4,16 @@ C:\Users\Owner\Documents\.Net Database Programming\SMB Characters\obj\Debug\net8
 C:\Users\Owner\Documents\.Net Database Programming\SMB Characters\obj\Debug\net8.0\SMB Characters.csproj.CoreCompileInputs.cache
 C:\Users\Owner\Documents\.Net Database Programming\SMB Characters\obj\Debug\net8.0\SMB Characters.csproj.AssemblyReference.cache
 C:\Users\Owner\Documents\.Net Database Programming\SMB Characters\obj\Debug\net8.0\SMB Characters.sourcelink.json
+C:\Users\Owner\Documents\.Net Database Programming\SMB Characters\bin\Debug\net8.0\NLog.config
+C:\Users\Owner\Documents\.Net Database Programming\SMB Characters\bin\Debug\net8.0\SMB Characters.exe
+C:\Users\Owner\Documents\.Net Database Programming\SMB Characters\bin\Debug\net8.0\SMB Characters.deps.json
+C:\Users\Owner\Documents\.Net Database Programming\SMB Characters\bin\Debug\net8.0\SMB Characters.runtimeconfig.json
+C:\Users\Owner\Documents\.Net Database Programming\SMB Characters\bin\Debug\net8.0\SMB Characters.dll
+C:\Users\Owner\Documents\.Net Database Programming\SMB Characters\bin\Debug\net8.0\SMB Characters.pdb
+C:\Users\Owner\Documents\.Net Database Programming\SMB Characters\bin\Debug\net8.0\NLog.dll
+C:\Users\Owner\Documents\.Net Database Programming\SMB Characters\obj\Debug\net8.0\SMB Char.5DDD42AF.Up2Date
+C:\Users\Owner\Documents\.Net Database Programming\SMB Characters\obj\Debug\net8.0\SMB Characters.dll
+C:\Users\Owner\Documents\.Net Database Programming\SMB Characters\obj\Debug\net8.0\refint\SMB Characters.dll
+C:\Users\Owner\Documents\.Net Database Programming\SMB Characters\obj\Debug\net8.0\SMB Characters.pdb
+C:\Users\Owner\Documents\.Net Database Programming\SMB Characters\obj\Debug\net8.0\SMB Characters.genruntimeconfig.cache
+C:\Users\Owner\Documents\.Net Database Programming\SMB Characters\obj\Debug\net8.0\ref\SMB Characters.dll

@@ -52,6 +52,10 @@
             "NLog": {
               "target": "Package",
               "version": "[6.0.3, )"
+            },
+            "NLog.Config": {
+              "target": "Package",
+              "version": "[4.7.15, )"
             }
           },
           "imports": [
